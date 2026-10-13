@@ -33,7 +33,7 @@ This repository benchmarks two intent-routing architectures for a **160-intent T
 │   └── results/                          # Sanitized benchmark summary & per-utterance JSONL outputs
 └── reports/
     ├── experiment_report.md              # Side-by-side KPI comparison table
-    └── technical_blog_diffusion_gemma_routing.md  # Full technical deep dive & engineering lessons
+    └── v1_baseline_report.md             # Version 1 baseline evaluation report
 ```
 
 ---

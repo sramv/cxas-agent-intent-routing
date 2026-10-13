@@ -11,3 +11,7 @@ venv/
 .DS_Store
 .idea/
 .vscode/
+
+# Draft blog posts
+reports/technical_blog_diffusion_gemma_routing.md
+technical_blog_diffusion_gemma_routing.md
