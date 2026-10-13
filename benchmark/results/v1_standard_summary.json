@@ -1,0 +1,143 @@
+{
+  "version": "v1",
+  "app_display_name": "telco-agent-v1-llm-router",
+  "app_name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V1_APP_ID>",
+  "model": "baseline-llm",
+  "difficulty_filter": "standard",
+  "total_cases": 160,
+  "valid_cases": 160,
+  "correct_cases": 160,
+  "error_cases": 0,
+  "routing_accuracy_pct": 100.0,
+  "orchestrator_routing_latency_ms": {
+    "mean": 928.5,
+    "p50": 891.92,
+    "p90": 1174.86,
+    "p95": 1254.31,
+    "p99": 1372.88,
+    "min": 608.07,
+    "max": 1803.14
+  },
+  "orchestrator_prefill_latency_ms": {
+    "mean": 122.91,
+    "p50": 98.0,
+    "p90": 197.0,
+    "p95": 232.15,
+    "p99": 341.17,
+    "min": 61.0,
+    "max": 557.0
+  },
+  "perceived_e2e_latency_ms": {
+    "mean": 1821.53,
+    "p50": 1761.0,
+    "p90": 2105.0,
+    "p95": 2268.95,
+    "p99": 2644.3,
+    "min": 1317.0,
+    "max": 3209.0
+  },
+  "client_e2e_latency_ms": {
+    "mean": 2847.72,
+    "p50": 2874.59,
+    "p90": 3198.25,
+    "p95": 3367.41,
+    "p99": 3799.09,
+    "min": 1932.58,
+    "max": 4242.45
+  },
+  "token_and_cost_metrics": {
+    "avg_orchestrator_input_tokens": 13794.9,
+    "avg_orchestrator_output_tokens": 24.1,
+    "avg_sub_agent_input_tokens": 1469.1,
+    "avg_sub_agent_output_tokens": 16.9,
+    "avg_total_input_tokens": 15264.0,
+    "avg_total_output_tokens": 41.1,
+    "orchestrator_routing_cost_per_1k_turns_usd": 2.0837,
+    "total_turn_cost_per_1k_turns_usd": 2.3142
+  },
+  "per_sub_agent": {
+    "Accounts": {
+      "total": 20,
+      "correct": 20,
+      "accuracy_pct": 100.0,
+      "orchestrator_p50_ms": 787.54,
+      "perceived_e2e_p50_ms": 1554.5
+    },
+    "Billing": {
+      "total": 20,
+      "correct": 20,
+      "accuracy_pct": 100.0,
+      "orchestrator_p50_ms": 884.34,
+      "perceived_e2e_p50_ms": 1735.5
+    },
+    "Technical Support": {
+      "total": 20,
+      "correct": 20,
+      "accuracy_pct": 100.0,
+      "orchestrator_p50_ms": 851.58,
+      "perceived_e2e_p50_ms": 1642.5
+    },
+    "Usage": {
+      "total": 20,
+      "correct": 20,
+      "accuracy_pct": 100.0,
+      "orchestrator_p50_ms": 919.47,
+      "perceived_e2e_p50_ms": 1887.0
+    },
+    "Plans": {
+      "total": 20,
+      "correct": 20,
+      "accuracy_pct": 100.0,
+      "orchestrator_p50_ms": 981.62,
+      "perceived_e2e_p50_ms": 1865.0
+    },
+    "Disconnect": {
+      "total": 20,
+      "correct": 20,
+      "accuracy_pct": 100.0,
+      "orchestrator_p50_ms": 903.47,
+      "perceived_e2e_p50_ms": 1842.5
+    },
+    "Equipment": {
+      "total": 20,
+      "correct": 20,
+      "accuracy_pct": 100.0,
+      "orchestrator_p50_ms": 953.48,
+      "perceived_e2e_p50_ms": 1855.5
+    },
+    "Payments": {
+      "total": 20,
+      "correct": 20,
+      "accuracy_pct": 100.0,
+      "orchestrator_p50_ms": 917.61,
+      "perceived_e2e_p50_ms": 1810.5
+    }
+  },
+  "confusion_matrix": {
+    "Accounts": {
+      "Accounts": 20
+    },
+    "Billing": {
+      "Billing": 20
+    },
+    "Disconnect": {
+      "Disconnect": 20
+    },
+    "Equipment": {
+      "Equipment": 20
+    },
+    "Payments": {
+      "Payments": 20
+    },
+    "Plans": {
+      "Plans": 20
+    },
+    "Technical Support": {
+      "Technical Support": 20
+    },
+    "Usage": {
+      "Usage": 20
+    }
+  },
+  "wall_time_seconds": 1016.59
+}

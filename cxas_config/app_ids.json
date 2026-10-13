@@ -1,0 +1,38 @@
+{
+  "project_id": "<YOUR_GCP_PROJECT_ID>",
+  "location": "us",
+  "v1_llm_router": {
+    "app_id": "<YOUR_V1_APP_ID>",
+    "app_name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V1_APP_ID>",
+    "display_name": "telco-agent-v1-llm-router",
+    "console_url": "https://ces.cloud.google.com/projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V1_APP_ID>",
+    "root_agent": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V1_APP_ID>/agents/<AGENT_UUID>",
+    "sub_agents": {
+      "Accounts": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V1_APP_ID>/agents/<AGENT_UUID>",
+      "Billing": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V1_APP_ID>/agents/<AGENT_UUID>",
+      "Technical Support": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V1_APP_ID>/agents/<AGENT_UUID>",
+      "Usage": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V1_APP_ID>/agents/<AGENT_UUID>",
+      "Plans": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V1_APP_ID>/agents/<AGENT_UUID>",
+      "Disconnect": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V1_APP_ID>/agents/<AGENT_UUID>",
+      "Equipment": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V1_APP_ID>/agents/<AGENT_UUID>",
+      "Payments": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V1_APP_ID>/agents/<AGENT_UUID>"
+    }
+  },
+  "v2_diffusion_gemma_router": {
+    "app_id": "<YOUR_V2_APP_ID>",
+    "app_name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>",
+    "display_name": "telco-agent-v2-fast-router",
+    "console_url": "https://ces.cloud.google.com/projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>",
+    "root_agent": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/<AGENT_UUID>",
+    "sub_agents": {
+      "Accounts": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/<AGENT_UUID>",
+      "Billing": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/<AGENT_UUID>",
+      "Technical Support": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/<AGENT_UUID>",
+      "Usage": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/<AGENT_UUID>",
+      "Plans": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/<AGENT_UUID>",
+      "Disconnect": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/<AGENT_UUID>",
+      "Equipment": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/<AGENT_UUID>",
+      "Payments": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/<AGENT_UUID>"
+    }
+  }
+}

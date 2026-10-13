@@ -1,0 +1,1504 @@
+{
+  "total_intents": 160,
+  "total_sub_agents": 8,
+  "sub_agents": {
+    "Accounts": {
+      "prefix": "ACC",
+      "description": "Account settings, profile updates, security credentials, ownership, and privacy inquiries",
+      "intent_count": 20,
+      "intent_ids": [
+        "ACC_001",
+        "ACC_002",
+        "ACC_003",
+        "ACC_004",
+        "ACC_005",
+        "ACC_006",
+        "ACC_007",
+        "ACC_008",
+        "ACC_009",
+        "ACC_010",
+        "ACC_011",
+        "ACC_012",
+        "ACC_013",
+        "ACC_014",
+        "ACC_015",
+        "ACC_016",
+        "ACC_017",
+        "ACC_018",
+        "ACC_019",
+        "ACC_020"
+      ]
+    },
+    "Billing": {
+      "prefix": "BIL",
+      "description": "Bill amounts, invoice viewing, charge explanations, bill disputes, and fee/credit inquiries",
+      "intent_count": 20,
+      "intent_ids": [
+        "BIL_001",
+        "BIL_002",
+        "BIL_003",
+        "BIL_004",
+        "BIL_005",
+        "BIL_006",
+        "BIL_007",
+        "BIL_008",
+        "BIL_009",
+        "BIL_010",
+        "BIL_011",
+        "BIL_012",
+        "BIL_013",
+        "BIL_014",
+        "BIL_015",
+        "BIL_016",
+        "BIL_017",
+        "BIL_018",
+        "BIL_019",
+        "BIL_020"
+      ]
+    },
+    "Payments": {
+      "prefix": "PAY",
+      "description": "Making bill payments, prepaid recharges/top-ups, AutoPay management, payment methods, and payment arrangements",
+      "intent_count": 20,
+      "intent_ids": [
+        "PAY_001",
+        "PAY_002",
+        "PAY_003",
+        "PAY_004",
+        "PAY_005",
+        "PAY_006",
+        "PAY_007",
+        "PAY_008",
+        "PAY_009",
+        "PAY_010",
+        "PAY_011",
+        "PAY_012",
+        "PAY_013",
+        "PAY_014",
+        "PAY_015",
+        "PAY_016",
+        "PAY_017",
+        "PAY_018",
+        "PAY_019",
+        "PAY_020"
+      ]
+    },
+    "Disconnect": {
+      "prefix": "DSC",
+      "description": "Cancelling lines, closing accounts, port-out PINs, temporary suspensions, and termination fee inquiries",
+      "intent_count": 20,
+      "intent_ids": [
+        "DSC_001",
+        "DSC_002",
+        "DSC_003",
+        "DSC_004",
+        "DSC_005",
+        "DSC_006",
+        "DSC_007",
+        "DSC_008",
+        "DSC_009",
+        "DSC_010",
+        "DSC_011",
+        "DSC_012",
+        "DSC_013",
+        "DSC_014",
+        "DSC_015",
+        "DSC_016",
+        "DSC_017",
+        "DSC_018",
+        "DSC_019",
+        "DSC_020"
+      ]
+    },
+    "Plans": {
+      "prefix": "PLN",
+      "description": "Mobile voice/data plans, plan upgrades/downgrades, add-on packs, family plans, and eligibility discounts",
+      "intent_count": 20,
+      "intent_ids": [
+        "PLN_001",
+        "PLN_002",
+        "PLN_003",
+        "PLN_004",
+        "PLN_005",
+        "PLN_006",
+        "PLN_007",
+        "PLN_008",
+        "PLN_009",
+        "PLN_010",
+        "PLN_011",
+        "PLN_012",
+        "PLN_013",
+        "PLN_014",
+        "PLN_015",
+        "PLN_016",
+        "PLN_017",
+        "PLN_018",
+        "PLN_019",
+        "PLN_020"
+      ]
+    },
+    "Equipment": {
+      "prefix": "EQP",
+      "description": "Mobile phones, devices, routers, SIM/eSIM cards, upgrades, trade-ins, unlocking, warranty, and orders",
+      "intent_count": 20,
+      "intent_ids": [
+        "EQP_001",
+        "EQP_002",
+        "EQP_003",
+        "EQP_004",
+        "EQP_005",
+        "EQP_006",
+        "EQP_007",
+        "EQP_008",
+        "EQP_009",
+        "EQP_010",
+        "EQP_011",
+        "EQP_012",
+        "EQP_013",
+        "EQP_014",
+        "EQP_015",
+        "EQP_016",
+        "EQP_017",
+        "EQP_018",
+        "EQP_019",
+        "EQP_020"
+      ]
+    },
+    "Usage": {
+      "prefix": "USG",
+      "description": "Mobile data consumption, hotspot usage, roaming usage, call/SMS history, data caps, and usage alerts",
+      "intent_count": 20,
+      "intent_ids": [
+        "USG_001",
+        "USG_002",
+        "USG_003",
+        "USG_004",
+        "USG_005",
+        "USG_006",
+        "USG_007",
+        "USG_008",
+        "USG_009",
+        "USG_010",
+        "USG_011",
+        "USG_012",
+        "USG_013",
+        "USG_014",
+        "USG_015",
+        "USG_016",
+        "USG_017",
+        "USG_018",
+        "USG_019",
+        "USG_020"
+      ]
+    },
+    "Technical Support": {
+      "prefix": "TEC",
+      "description": "Network connectivity issues, no signal, slow data speeds, dropped calls, SMS/voicemail failures, and technical troubleshooting",
+      "intent_count": 20,
+      "intent_ids": [
+        "TEC_001",
+        "TEC_002",
+        "TEC_003",
+        "TEC_004",
+        "TEC_005",
+        "TEC_006",
+        "TEC_007",
+        "TEC_008",
+        "TEC_009",
+        "TEC_010",
+        "TEC_011",
+        "TEC_012",
+        "TEC_013",
+        "TEC_014",
+        "TEC_015",
+        "TEC_016",
+        "TEC_017",
+        "TEC_018",
+        "TEC_019",
+        "TEC_020"
+      ]
+    }
+  },
+  "intents": [
+    {
+      "global_index": 1,
+      "intent_id": "ACC_001",
+      "intent_name": "Update Billing Address",
+      "sub_agent": "Accounts",
+      "description": "User wants to change or update the physical or mailing billing address on their mobile account",
+      "sample_utterance": "I moved to a new apartment and need to update my billing address."
+    },
+    {
+      "global_index": 2,
+      "intent_id": "ACC_002",
+      "intent_name": "Change Account Email",
+      "sub_agent": "Accounts",
+      "description": "User wants to update the primary email address used for notifications and login",
+      "sample_utterance": "How do I change the email address linked to my telco profile?"
+    },
+    {
+      "global_index": 3,
+      "intent_id": "ACC_003",
+      "intent_name": "Reset Account Password",
+      "sub_agent": "Accounts",
+      "description": "User forgot their online portal password or wants to change it",
+      "sample_utterance": "I cannot log into my online account and need to reset my password."
+    },
+    {
+      "global_index": 4,
+      "intent_id": "ACC_004",
+      "intent_name": "Update Security PIN",
+      "sub_agent": "Accounts",
+      "description": "User wants to reset or change their 4-to-6 digit account security PIN/passcode",
+      "sample_utterance": "I need to change my account security PIN for calling customer care."
+    },
+    {
+      "global_index": 5,
+      "intent_id": "ACC_005",
+      "intent_name": "Add Authorized User",
+      "sub_agent": "Accounts",
+      "description": "User wants to grant another person permission to manage the account or pick up devices in store",
+      "sample_utterance": "Can I add my spouse as an authorized user on my mobile account?"
+    },
+    {
+      "global_index": 6,
+      "intent_id": "ACC_006",
+      "intent_name": "Remove Authorized User",
+      "sub_agent": "Accounts",
+      "description": "User wants to revoke account access from a previously authorized person",
+      "sample_utterance": "Please remove my ex-partner as an authorized manager on my account."
+    },
+    {
+      "global_index": 7,
+      "intent_id": "ACC_007",
+      "intent_name": "Legal Name Change",
+      "sub_agent": "Accounts",
+      "description": "User wants to update the legal name on the account due to marriage, divorce, or court order",
+      "sample_utterance": "I recently got married and want to update my last name on my wireless account."
+    },
+    {
+      "global_index": 8,
+      "intent_id": "ACC_008",
+      "intent_name": "Paperless Billing Preference",
+      "sub_agent": "Accounts",
+      "description": "User wants to opt into or out of paperless e-bill notifications in account settings",
+      "sample_utterance": "Switch my account communication settings from paper mail to paperless email only."
+    },
+    {
+      "global_index": 9,
+      "intent_id": "ACC_009",
+      "intent_name": "Transfer Billing Responsibility",
+      "sub_agent": "Accounts",
+      "description": "User wants to transfer ownership of a line or account to another individual's account",
+      "sample_utterance": "I want to transfer ownership of my son's phone line into his own separate account."
+    },
+    {
+      "global_index": 10,
+      "intent_id": "ACC_010",
+      "intent_name": "CPNI Privacy Settings",
+      "sub_agent": "Accounts",
+      "description": "User wants to manage Customer Proprietary Network Information (CPNI) or data sharing preferences",
+      "sample_utterance": "Opt my account out of CPNI marketing and third-party data sharing."
+    },
+    {
+      "global_index": 11,
+      "intent_id": "ACC_011",
+      "intent_name": "Two-Factor Authentication Setup",
+      "sub_agent": "Accounts",
+      "description": "User wants to enable or update 2FA/MFA verification methods on their account",
+      "sample_utterance": "How do I turn on two-factor authentication for my mobile account login?"
+    },
+    {
+      "global_index": 12,
+      "intent_id": "ACC_012",
+      "intent_name": "Biometric Login Configuration",
+      "sub_agent": "Accounts",
+      "description": "User needs help enabling Face ID or fingerprint login in the carrier mobile app",
+      "sample_utterance": "The app won't save my Face ID login preference in account settings."
+    },
+    {
+      "global_index": 13,
+      "intent_id": "ACC_013",
+      "intent_name": "Account Number Lookup",
+      "sub_agent": "Accounts",
+      "description": "User is asking how to find their full wireless account number",
+      "sample_utterance": "Where can I find my 12-digit wireless account number?"
+    },
+    {
+      "global_index": 14,
+      "intent_id": "ACC_014",
+      "intent_name": "Update Contact Phone Number",
+      "sub_agent": "Accounts",
+      "description": "User wants to change their alternate/secondary contact phone number on file",
+      "sample_utterance": "Update my secondary contact number on my profile."
+    },
+    {
+      "global_index": 15,
+      "intent_id": "ACC_015",
+      "intent_name": "Marketing Communication Preferences",
+      "sub_agent": "Accounts",
+      "description": "User wants to unsubscribe from promotional SMS or marketing emails",
+      "sample_utterance": "Stop sending promotional text messages and marketing offers to my line."
+    },
+    {
+      "global_index": 16,
+      "intent_id": "ACC_016",
+      "intent_name": "Tax-Exempt Status Registration",
+      "sub_agent": "Accounts",
+      "description": "User wants to upload tax-exempt documentation for a business or government account",
+      "sample_utterance": "Where do I submit our organization's tax-exempt certificate for our account?"
+    },
+    {
+      "global_index": 17,
+      "intent_id": "ACC_017",
+      "intent_name": "Deceased Account Holder Update",
+      "sub_agent": "Accounts",
+      "description": "User needs to manage or transfer an account belonging to a deceased family member",
+      "sample_utterance": "My father passed away and I need to take over management of his mobile account."
+    },
+    {
+      "global_index": 18,
+      "intent_id": "ACC_018",
+      "intent_name": "Multi-Line Role Permissions",
+      "sub_agent": "Accounts",
+      "description": "User wants to change line-level permissions (e.g., making a line an Account Member vs Manager)",
+      "sample_utterance": "Restrict my teenager's line so they cannot purchase add-ons on the account."
+    },
+    {
+      "global_index": 19,
+      "intent_id": "ACC_019",
+      "intent_name": "Unlock Locked Online Profile",
+      "sub_agent": "Accounts",
+      "description": "User's online portal profile is locked after too many failed login attempts",
+      "sample_utterance": "My online account is locked after entering the wrong password three times."
+    },
+    {
+      "global_index": 20,
+      "intent_id": "ACC_020",
+      "intent_name": "Preferred Language Update",
+      "sub_agent": "Accounts",
+      "description": "User wants to change the preferred language for account alerts and customer communications",
+      "sample_utterance": "Change my account notification language preference to Spanish."
+    },
+    {
+      "global_index": 21,
+      "intent_id": "BIL_001",
+      "intent_name": "Current Bill Balance Inquiry",
+      "sub_agent": "Billing",
+      "description": "User wants to know the total amount due and due date for their current monthly bill",
+      "sample_utterance": "How much is my current mobile bill and when is it due?"
+    },
+    {
+      "global_index": 22,
+      "intent_id": "BIL_002",
+      "intent_name": "Download Past Bill PDF",
+      "sub_agent": "Billing",
+      "description": "User wants to view or download historical billing statements from previous months",
+      "sample_utterance": "I need PDF copies of my mobile bills from the last three months for work expense reimbursement."
+    },
+    {
+      "global_index": 23,
+      "intent_id": "BIL_003",
+      "intent_name": "Itemized Bill Request",
+      "sub_agent": "Billing",
+      "description": "User requests a detailed breakdown of every call, text, and data charge on their invoice",
+      "sample_utterance": "Can I get a fully itemized bill showing all call details for last month?"
+    },
+    {
+      "global_index": 24,
+      "intent_id": "BIL_004",
+      "intent_name": "Unexpected Bill Increase Dispute",
+      "sub_agent": "Billing",
+      "description": "User is questioning why their monthly bill is higher than usual",
+      "sample_utterance": "Why did my bill jump from $75 to $112 this month?"
+    },
+    {
+      "global_index": 25,
+      "intent_id": "BIL_005",
+      "intent_name": "Prorated Charges Explanation",
+      "sub_agent": "Billing",
+      "description": "User wants an explanation of partial-month prorated charges after a mid-cycle change",
+      "sample_utterance": "What are these partial month prorated charges on my new statement?"
+    },
+    {
+      "global_index": 26,
+      "intent_id": "BIL_006",
+      "intent_name": "Roaming Charge Dispute",
+      "sub_agent": "Billing",
+      "description": "User disputes unexpected international roaming charges on their bill",
+      "sample_utterance": "I was billed $90 for roaming even though my phone was on airplane mode."
+    },
+    {
+      "global_index": 27,
+      "intent_id": "BIL_007",
+      "intent_name": "Third-Party Subscription Dispute",
+      "sub_agent": "Billing",
+      "description": "User sees unauthorized third-party or direct carrier billing charges on their invoice",
+      "sample_utterance": "There is a $9.99 monthly game subscription charge on my bill that I never signed up for."
+    },
+    {
+      "global_index": 28,
+      "intent_id": "BIL_008",
+      "intent_name": "Late Fee Waiver Request",
+      "sub_agent": "Billing",
+      "description": "User asks to waive or credit a late payment fee on their bill",
+      "sample_utterance": "I missed my due date by one day\u2014can you waive the $8 late fee on my bill?"
+    },
+    {
+      "global_index": 29,
+      "intent_id": "BIL_009",
+      "intent_name": "Activation Fee Waiver",
+      "sub_agent": "Billing",
+      "description": "User requests a waiver or credit for a one-time line activation or upgrade fee",
+      "sample_utterance": "I was told the $35 activation fee would be waived on my bill, but it's still there."
+    },
+    {
+      "global_index": 30,
+      "intent_id": "BIL_010",
+      "intent_name": "Taxes and Surcharges Breakdown",
+      "sub_agent": "Billing",
+      "description": "User asks what the government taxes, USF, and regulatory surcharges on their bill mean",
+      "sample_utterance": "Why did the regulatory fees and local telecom taxes increase on my invoice?"
+    },
+    {
+      "global_index": 31,
+      "intent_id": "BIL_011",
+      "intent_name": "Missing Trade-In Bill Credit",
+      "sub_agent": "Billing",
+      "description": "User states their monthly promotional device trade-in credit did not appear on the bill",
+      "sample_utterance": "I traded in my old phone two months ago, why isn't my $20 monthly trade-in credit showing on my bill?"
+    },
+    {
+      "global_index": 32,
+      "intent_id": "BIL_012",
+      "intent_name": "Missing Promotional Discount",
+      "sub_agent": "Billing",
+      "description": "User states a promised plan or multi-line promotional discount is missing from the invoice",
+      "sample_utterance": "My nurse discount wasn't applied to this month's billing statement."
+    },
+    {
+      "global_index": 33,
+      "intent_id": "BIL_013",
+      "intent_name": "Duplicate Charge Adjustment",
+      "sub_agent": "Billing",
+      "description": "User reports being billed twice for the same service or add-on on their invoice",
+      "sample_utterance": "My bill shows I was charged twice for the same international add-on."
+    },
+    {
+      "global_index": 34,
+      "intent_id": "BIL_014",
+      "intent_name": "Device Installment Charge Inquiry",
+      "sub_agent": "Billing",
+      "description": "User asks how many monthly installment bill charges remain on their financed phone",
+      "sample_utterance": "Why does my bill show step 14 of 24 for my equipment installment charge?"
+    },
+    {
+      "global_index": 35,
+      "intent_id": "BIL_015",
+      "intent_name": "Final Bill After Cancellation Inquiry",
+      "sub_agent": "Billing",
+      "description": "User is asking about the final invoice balance after closing a line or account",
+      "sample_utterance": "I received a final bill in the mail after canceling last month\u2014is this a credit or an amount owed?"
+    },
+    {
+      "global_index": 36,
+      "intent_id": "BIL_016",
+      "intent_name": "Credit Balance Refund Request",
+      "sub_agent": "Billing",
+      "description": "User has a negative (credit) balance on their bill and wants it refunded",
+      "sample_utterance": "My bill shows a -$65 credit balance; how do I get that refunded to my bank?"
+    },
+    {
+      "global_index": 37,
+      "intent_id": "BIL_017",
+      "intent_name": "Change Billing Cycle Date",
+      "sub_agent": "Billing",
+      "description": "User wants to move their monthly bill cycle close date and due date to another day of the month",
+      "sample_utterance": "Can I change my monthly billing due date from the 5th to the 20th of the month?"
+    },
+    {
+      "global_index": 38,
+      "intent_id": "BIL_018",
+      "intent_name": "Per-Line Cost Split Breakdown",
+      "sub_agent": "Billing",
+      "description": "User wants to see how much each individual family line costs on the shared bill",
+      "sample_utterance": "Can you break down the exact bill cost for each of the four lines on my family plan?"
+    },
+    {
+      "global_index": 39,
+      "intent_id": "BIL_019",
+      "intent_name": "Device Protection Charge Inquiry",
+      "sub_agent": "Billing",
+      "description": "User asks about the monthly insurance/protection tier charge appearing on their bill",
+      "sample_utterance": "What is the $18 Equipment Protection charge listed under line 2 on my bill?"
+    },
+    {
+      "global_index": 40,
+      "intent_id": "BIL_020",
+      "intent_name": "Paper Bill Fee Inquiry",
+      "sub_agent": "Billing",
+      "description": "User asks why they are being charged a fee for receiving a paper statement in the mail",
+      "sample_utterance": "Why is there a $2 paper statement fee on my monthly bill?"
+    },
+    {
+      "global_index": 41,
+      "intent_id": "PAY_001",
+      "intent_name": "Make One-Time Bill Payment",
+      "sub_agent": "Payments",
+      "description": "User wants to pay their current postpaid mobile bill balance right now",
+      "sample_utterance": "I want to make a one-time payment of $85 toward my mobile bill now."
+    },
+    {
+      "global_index": 42,
+      "intent_id": "PAY_002",
+      "intent_name": "Prepaid Recharge / Top-Up",
+      "sub_agent": "Payments",
+      "description": "User wants to recharge or top up their prepaid mobile balance",
+      "sample_utterance": "I need to recharge my prepaid number with a $30 top-up."
+    },
+    {
+      "global_index": 43,
+      "intent_id": "PAY_003",
+      "intent_name": "Enroll in AutoPay",
+      "sub_agent": "Payments",
+      "description": "User wants to set up automatic monthly bill payments",
+      "sample_utterance": "How do I sign up for AutoPay so my bill is paid automatically every month?"
+    },
+    {
+      "global_index": 44,
+      "intent_id": "PAY_004",
+      "intent_name": "Cancel AutoPay",
+      "sub_agent": "Payments",
+      "description": "User wants to turn off automatic recurring payments",
+      "sample_utterance": "Please disable AutoPay for this month so my card isn't charged automatically."
+    },
+    {
+      "global_index": 45,
+      "intent_id": "PAY_005",
+      "intent_name": "Update AutoPay Payment Method",
+      "sub_agent": "Payments",
+      "description": "User wants to switch the bank account or debit card used for AutoPay",
+      "sample_utterance": "I got a new debit card and need to update my AutoPay payment method."
+    },
+    {
+      "global_index": 46,
+      "intent_id": "PAY_006",
+      "intent_name": "Update Expired Credit Card",
+      "sub_agent": "Payments",
+      "description": "User wants to update the expiration date and CVV on a saved payment card",
+      "sample_utterance": "My saved Visa card expired and I need to update the expiration date for payments."
+    },
+    {
+      "global_index": 47,
+      "intent_id": "PAY_007",
+      "intent_name": "Set Up Bank ACH Payment",
+      "sub_agent": "Payments",
+      "description": "User wants to pay using a checking/savings bank routing and account number",
+      "sample_utterance": "Can I link my checking account via ACH to pay my wireless bill?"
+    },
+    {
+      "global_index": 48,
+      "intent_id": "PAY_008",
+      "intent_name": "Request Payment Arrangement",
+      "sub_agent": "Payments",
+      "description": "User cannot pay on time and wants to schedule a promise-to-pay or installment arrangement",
+      "sample_utterance": "I don't get paid until Friday; can I set up a payment arrangement so my phone isn't shut off?"
+    },
+    {
+      "global_index": 49,
+      "intent_id": "PAY_009",
+      "intent_name": "Split Payment Across Two Cards",
+      "sub_agent": "Payments",
+      "description": "User wants to pay part of their balance with one card and the rest with another",
+      "sample_utterance": "Can I pay $50 on my debit card and the remaining $60 on my credit card?"
+    },
+    {
+      "global_index": 50,
+      "intent_id": "PAY_010",
+      "intent_name": "Retry Declined Payment",
+      "sub_agent": "Payments",
+      "description": "User's recent payment failed or was declined and they want to retry it",
+      "sample_utterance": "My automatic payment was declined by my bank this morning; I'd like to retry the payment now."
+    },
+    {
+      "global_index": 51,
+      "intent_id": "PAY_011",
+      "intent_name": "Refund Duplicate Payment",
+      "sub_agent": "Payments",
+      "description": "User accidentally submitted two payments and wants the extra payment refunded",
+      "sample_utterance": "I accidentally clicked pay twice and my bank account was debited two times!"
+    },
+    {
+      "global_index": 52,
+      "intent_id": "PAY_012",
+      "intent_name": "Trace Missing Payment",
+      "sub_agent": "Payments",
+      "description": "User made a payment from their bank/card but the account still shows unpaid",
+      "sample_utterance": "My bank shows the payment cleared 3 days ago, but my telco balance hasn't updated."
+    },
+    {
+      "global_index": 53,
+      "intent_id": "PAY_013",
+      "intent_name": "Redeem Prepaid Refill Card / Voucher",
+      "sub_agent": "Payments",
+      "description": "User has a 14-digit PIN from a retail refill card/voucher and wants to apply it",
+      "sample_utterance": "I bought a $50 prepaid refill card at the store\u2014how do I enter the PIN to add the funds?"
+    },
+    {
+      "global_index": 54,
+      "intent_id": "PAY_014",
+      "intent_name": "Pay with Apple Pay or Google Pay",
+      "sub_agent": "Payments",
+      "description": "User wants to complete a mobile payment using Apple Pay or Google Pay",
+      "sample_utterance": "Can I pay my monthly mobile bill using Apple Pay?"
+    },
+    {
+      "global_index": 55,
+      "intent_id": "PAY_015",
+      "intent_name": "International Credit Card Payment Issue",
+      "sub_agent": "Payments",
+      "description": "User is trying to pay with a non-domestic credit card and facing zip/postal validation issues",
+      "sample_utterance": "How can I pay my mobile bill using an international credit card without a local zip code?"
+    },
+    {
+      "global_index": 56,
+      "intent_id": "PAY_016",
+      "intent_name": "Request Payment Receipt",
+      "sub_agent": "Payments",
+      "description": "User needs an official payment confirmation receipt for a completed payment",
+      "sample_utterance": "Please send me a payment confirmation receipt for the $120 payment I made yesterday."
+    },
+    {
+      "global_index": 57,
+      "intent_id": "PAY_017",
+      "intent_name": "Modify Scheduled Payment Date",
+      "sub_agent": "Payments",
+      "description": "User wants to cancel or reschedule a pending future-dated payment",
+      "sample_utterance": "I scheduled a payment for the 15th, can I move that scheduled payment to the 18th instead?"
+    },
+    {
+      "global_index": 58,
+      "intent_id": "PAY_018",
+      "intent_name": "Agent Assisted Payment Fee Inquiry",
+      "sub_agent": "Payments",
+      "description": "User is asking about or disputing a payment processing fee for paying via live agent",
+      "sample_utterance": "Is there a fee if I make my payment over the phone instead of in the app?"
+    },
+    {
+      "global_index": 59,
+      "intent_id": "PAY_019",
+      "intent_name": "Restore Service After Past-Due Payment",
+      "sub_agent": "Payments",
+      "description": "User just paid a past-due balance and wants their suspended service restored immediately",
+      "sample_utterance": "I just paid my overdue balance in full\u2014how quickly will my outgoing calls be restored?"
+    },
+    {
+      "global_index": 60,
+      "intent_id": "PAY_020",
+      "intent_name": "AutoPay Discount Eligibility Check",
+      "sub_agent": "Payments",
+      "description": "User asks which payment methods qualify for the monthly AutoPay discount",
+      "sample_utterance": "Do I still get the $5 per line AutoPay discount if I pay with a credit card instead of a debit card?"
+    },
+    {
+      "global_index": 61,
+      "intent_id": "DSC_001",
+      "intent_name": "Cancel Single Mobile Line",
+      "sub_agent": "Disconnect",
+      "description": "User wants to permanently disconnect one specific phone line while keeping other lines active",
+      "sample_utterance": "I want to cancel just the fourth line on my family account."
+    },
+    {
+      "global_index": 62,
+      "intent_id": "DSC_002",
+      "intent_name": "Close Entire Mobile Account",
+      "sub_agent": "Disconnect",
+      "description": "User wants to cancel all lines and permanently close their entire wireless account",
+      "sample_utterance": "I am moving abroad permanently and need to cancel my entire mobile account."
+    },
+    {
+      "global_index": 63,
+      "intent_id": "DSC_003",
+      "intent_name": "Request Number Transfer / Port-Out PIN",
+      "sub_agent": "Disconnect",
+      "description": "User wants a port-out PIN (NTP/PAC code) to move their phone number to another carrier",
+      "sample_utterance": "I need a number transfer PIN so I can port my phone number to another carrier."
+    },
+    {
+      "global_index": 64,
+      "intent_id": "DSC_004",
+      "intent_name": "Calculate Early Termination Fee",
+      "sub_agent": "Disconnect",
+      "description": "User wants to know the cost or penalty to cancel a contract line early",
+      "sample_utterance": "How much is the early termination fee if I cancel my contract 4 months early?"
+    },
+    {
+      "global_index": 65,
+      "intent_id": "DSC_005",
+      "intent_name": "Device Payoff Required Before Disconnect",
+      "sub_agent": "Disconnect",
+      "description": "User asks what happens to their remaining phone financing balance if they cancel service",
+      "sample_utterance": "If I disconnect my line today, does the remaining balance on my phone become due immediately?"
+    },
+    {
+      "global_index": 66,
+      "intent_id": "DSC_006",
+      "intent_name": "Military Deployment Line Suspension",
+      "sub_agent": "Disconnect",
+      "description": "User wants to suspend their line without charges due to active military deployment orders",
+      "sample_utterance": "I received active duty deployment orders overseas and need to place my mobile line on military suspension."
+    },
+    {
+      "global_index": 67,
+      "intent_id": "DSC_007",
+      "intent_name": "Seasonal / Vacation Line Suspension",
+      "sub_agent": "Disconnect",
+      "description": "User wants to temporarily suspend their mobile service while traveling for a few months",
+      "sample_utterance": "Can I temporarily suspend my mobile line for 3 months while I backpack overseas?"
+    },
+    {
+      "global_index": 68,
+      "intent_id": "DSC_008",
+      "intent_name": "Suspend Lost or Stolen Line",
+      "sub_agent": "Disconnect",
+      "description": "User lost their phone or had it stolen and wants to immediately suspend service on the line",
+      "sample_utterance": "My phone was just stolen! Please suspend my line immediately so nobody can use it."
+    },
+    {
+      "global_index": 69,
+      "intent_id": "DSC_009",
+      "intent_name": "Cancel Smartwatch Companion Line",
+      "sub_agent": "Disconnect",
+      "description": "User wants to disconnect the cellular plan on their Apple Watch or Galaxy Watch",
+      "sample_utterance": "I don't use cellular on my smartwatch anymore\u2014please cancel my watch line."
+    },
+    {
+      "global_index": 70,
+      "intent_id": "DSC_010",
+      "intent_name": "Cancel Tablet Data Line",
+      "sub_agent": "Disconnect",
+      "description": "User wants to disconnect the cellular data line for their iPad or tablet",
+      "sample_utterance": "Please disconnect the $20/month iPad data line on my account."
+    },
+    {
+      "global_index": 71,
+      "intent_id": "DSC_011",
+      "intent_name": "Cancel 5G Home Internet Service",
+      "sub_agent": "Disconnect",
+      "description": "User wants to cancel their fixed wireless / 5G home broadband service",
+      "sample_utterance": "I want to cancel my 5G Home Internet service effective at the end of this billing cycle."
+    },
+    {
+      "global_index": 72,
+      "intent_id": "DSC_012",
+      "intent_name": "Cancel International Roaming Add-On",
+      "sub_agent": "Disconnect",
+      "description": "User returned from travel and wants to remove a recurring international pass",
+      "sample_utterance": "I'm back from Europe; please cancel the monthly international roaming pass on my line."
+    },
+    {
+      "global_index": 73,
+      "intent_id": "DSC_013",
+      "intent_name": "Cancel Device Protection Insurance",
+      "sub_agent": "Disconnect",
+      "description": "User wants to remove the monthly device insurance/protection plan from their line",
+      "sample_utterance": "Please cancel the monthly device protection insurance on my phone."
+    },
+    {
+      "global_index": 74,
+      "intent_id": "DSC_014",
+      "intent_name": "Cancel Bundled Streaming Perk",
+      "sub_agent": "Disconnect",
+      "description": "User wants to cancel a paid streaming add-on billed through their carrier",
+      "sample_utterance": "Disconnect the premium streaming add-on from my mobile services."
+    },
+    {
+      "global_index": 75,
+      "intent_id": "DSC_015",
+      "intent_name": "Deceased Subscriber Line Cancellation",
+      "sub_agent": "Disconnect",
+      "description": "User needs to cancel a line belonging to a subscriber who passed away and waive fees",
+      "sample_utterance": "I need to cancel my late grandmother's phone line."
+    },
+    {
+      "global_index": 76,
+      "intent_id": "DSC_016",
+      "intent_name": "Buyer's Remorse / 14-Day Return Cancellation",
+      "sub_agent": "Disconnect",
+      "description": "User signed up within the last 14 days and wants to cancel under the Worry-Free / Buyer's Remorse policy",
+      "sample_utterance": "I activated this line 5 days ago and the coverage at my house is terrible; I want to cancel within the 14-day return window."
+    },
+    {
+      "global_index": 77,
+      "intent_id": "DSC_017",
+      "intent_name": "Disconnect Due to No Coverage after Relocation",
+      "sub_agent": "Disconnect",
+      "description": "User moved to an area with zero carrier coverage and needs to disconnect without penalty",
+      "sample_utterance": "I moved to a rural town where your network has no signal at all, so I need to disconnect my service."
+    },
+    {
+      "global_index": 78,
+      "intent_id": "DSC_018",
+      "intent_name": "Retention / Win-Back Offer Before Cancelling",
+      "sub_agent": "Disconnect",
+      "description": "User is considering cancelling because of price and asks if there are retention offers before disconnecting",
+      "sample_utterance": "I'm thinking of cancelling my 3 lines because a competitor is cheaper\u2014do you have any retention options before I disconnect?"
+    },
+    {
+      "global_index": 79,
+      "intent_id": "DSC_019",
+      "intent_name": "Reactivate Recently Disconnected Line",
+      "sub_agent": "Disconnect",
+      "description": "User cancelled a line recently and wants to undo the disconnection and recover their number",
+      "sample_utterance": "I cancelled my line last week by mistake\u2014can you reconnect it and recover my old phone number?"
+    },
+    {
+      "global_index": 80,
+      "intent_id": "DSC_020",
+      "intent_name": "Close Prepaid Account",
+      "sub_agent": "Disconnect",
+      "description": "User wants to permanently terminate their prepaid mobile number and account",
+      "sample_utterance": "How do I permanently close my prepaid mobile account so the number is deactivated?"
+    },
+    {
+      "global_index": 81,
+      "intent_id": "PLN_001",
+      "intent_name": "Upgrade to Unlimited Premium Plan",
+      "sub_agent": "Plans",
+      "description": "User wants to upgrade their current plan to the highest-tier unlimited 5G plan",
+      "sample_utterance": "I want to upgrade my mobile plan to the Unlimited Ultimate plan with uncapped 5G."
+    },
+    {
+      "global_index": 82,
+      "intent_id": "PLN_002",
+      "intent_name": "Downgrade to Basic / Saver Plan",
+      "sub_agent": "Plans",
+      "description": "User wants to switch to a cheaper, lower-data monthly plan to save money",
+      "sample_utterance": "I barely use 5GB a month because I'm always on Wi-Fi; what's your cheapest basic postpaid plan?"
+    },
+    {
+      "global_index": 83,
+      "intent_id": "PLN_003",
+      "intent_name": "Add a New Line to Family Plan",
+      "sub_agent": "Plans",
+      "description": "User wants to know the plan pricing and steps to add another voice line to their family plan",
+      "sample_utterance": "How much will my monthly plan change if I add a 5th line for my daughter?"
+    },
+    {
+      "global_index": 84,
+      "intent_id": "PLN_004",
+      "intent_name": "Compare Postpaid Unlimited Plans",
+      "sub_agent": "Plans",
+      "description": "User wants a side-by-side comparison of available postpaid plan tiers",
+      "sample_utterance": "What is the difference between your Unlimited Starter, Unlimited Extra, and Unlimited Premium plans?"
+    },
+    {
+      "global_index": 85,
+      "intent_id": "PLN_005",
+      "intent_name": "Switch from Prepaid to Postpaid Plan",
+      "sub_agent": "Plans",
+      "description": "User wants to migrate their existing prepaid number onto a monthly postpaid plan",
+      "sample_utterance": "I want to convert my prepaid plan to a regular monthly postpaid plan."
+    },
+    {
+      "global_index": 86,
+      "intent_id": "PLN_006",
+      "intent_name": "Switch from Postpaid to Prepaid Plan",
+      "sub_agent": "Plans",
+      "description": "User wants to move their postpaid line to a no-contract prepaid plan",
+      "sample_utterance": "Can I switch my current postpaid line over to a $35 monthly prepaid plan?"
+    },
+    {
+      "global_index": 87,
+      "intent_id": "PLN_007",
+      "intent_name": "Add International Travel Day Pass",
+      "sub_agent": "Plans",
+      "description": "User wants to add a daily international roaming plan for an upcoming trip",
+      "sample_utterance": "I'm flying to Japan next week\u2014what international travel pass plan can I add to my line?"
+    },
+    {
+      "global_index": 88,
+      "intent_id": "PLN_008",
+      "intent_name": "Add High-Speed Mobile Hotspot Pack",
+      "sub_agent": "Plans",
+      "description": "User wants to add extra high-speed tethering/hotspot data to their plan",
+      "sample_utterance": "Can I add an extra 25GB of mobile hotspot data to my plan for this month?"
+    },
+    {
+      "global_index": 89,
+      "intent_id": "PLN_009",
+      "intent_name": "Add International Long Distance Calling Plan",
+      "sub_agent": "Plans",
+      "description": "User wants a plan add-on to call international numbers from their home country",
+      "sample_utterance": "What monthly plan add-on do you have for calling landlines and mobiles in India and the UK?"
+    },
+    {
+      "global_index": 90,
+      "intent_id": "PLN_010",
+      "intent_name": "Student Discount Plan Inquiry",
+      "sub_agent": "Plans",
+      "description": "User asks about discounted mobile plans available for college/university students",
+      "sample_utterance": "Do you offer a discounted unlimited plan for university students?"
+    },
+    {
+      "global_index": 91,
+      "intent_id": "PLN_011",
+      "intent_name": "Military & Veterans Plan Inquiry",
+      "sub_agent": "Plans",
+      "description": "User asks about special mobile plan pricing for active military and veterans",
+      "sample_utterance": "What are the pricing details for your Military & Veterans family mobile plans?"
+    },
+    {
+      "global_index": 92,
+      "intent_id": "PLN_012",
+      "intent_name": "First Responder Plan Eligibility",
+      "sub_agent": "Plans",
+      "description": "User asks about mobile plans and priority network access for paramedics, firefighters, or police",
+      "sample_utterance": "I'm a firefighter\u2014how do I switch to the First Responder unlimited plan?"
+    },
+    {
+      "global_index": 93,
+      "intent_id": "PLN_013",
+      "intent_name": "Senior 55+ Plan Inquiry",
+      "sub_agent": "Plans",
+      "description": "User asks about discounted unlimited plans for customers aged 55 and older",
+      "sample_utterance": "Tell me about the 2-line Unlimited 55+ senior mobile plan."
+    },
+    {
+      "global_index": 94,
+      "intent_id": "PLN_014",
+      "intent_name": "Small Business / Fleet Plan Inquiry",
+      "sub_agent": "Plans",
+      "description": "User is asking about multi-line business mobility plans",
+      "sample_utterance": "What business mobile plans do you offer for a company with 10 employee lines?"
+    },
+    {
+      "global_index": 95,
+      "intent_id": "PLN_015",
+      "intent_name": "Smartwatch Wearable Data Plan",
+      "sub_agent": "Plans",
+      "description": "User wants to know the plan options for adding cellular service to a smartwatch",
+      "sample_utterance": "How much is the monthly plan to share my number with a cellular Apple Watch?"
+    },
+    {
+      "global_index": 96,
+      "intent_id": "PLN_016",
+      "intent_name": "Tablet / iPad Data-Only Plan",
+      "sub_agent": "Plans",
+      "description": "User wants to inquire about or change a data-only plan for a tablet or mobile hotspot jetpack",
+      "sample_utterance": "What data-only plans are available for an iPad Pro?"
+    },
+    {
+      "global_index": 97,
+      "intent_id": "PLN_017",
+      "intent_name": "Prepaid Monthly & Annual Plan Options",
+      "sub_agent": "Plans",
+      "description": "User wants details on multi-month or annual prepaid data plans",
+      "sample_utterance": "Tell me about your 300GB prepaid plan and annual prepaid bundles."
+    },
+    {
+      "global_index": 98,
+      "intent_id": "PLN_018",
+      "intent_name": "Bundled Streaming Perks on Plan",
+      "sub_agent": "Plans",
+      "description": "User asks which mobile plans include streaming perks like Netflix, Disney+, or Apple Music",
+      "sample_utterance": "Which of your unlimited plans includes Netflix or Disney+ in the plan price?"
+    },
+    {
+      "global_index": 99,
+      "intent_id": "PLN_019",
+      "intent_name": "Effective Date of Plan Change",
+      "sub_agent": "Plans",
+      "description": "User wants to schedule a plan change to take effect immediately vs at the next billing cycle",
+      "sample_utterance": "If I change my data plan today, can I backdate it to the start of this billing cycle?"
+    },
+    {
+      "global_index": 100,
+      "intent_id": "PLN_020",
+      "intent_name": "Data Rollover Policy on Plans",
+      "sub_agent": "Plans",
+      "description": "User asks which plans allow unused monthly high-speed data to roll over to the next month",
+      "sample_utterance": "Does unused data roll over to next month on the 50GB mobile plan?"
+    },
+    {
+      "global_index": 101,
+      "intent_id": "EQP_001",
+      "intent_name": "Purchase / Upgrade to New Smartphone",
+      "sub_agent": "Equipment",
+      "description": "User wants to buy a new mobile phone or upgrade their existing handset",
+      "sample_utterance": "I want to upgrade my current phone to the newest flagship smartphone."
+    },
+    {
+      "global_index": 102,
+      "intent_id": "EQP_002",
+      "intent_name": "Check Device Trade-In Value",
+      "sub_agent": "Equipment",
+      "description": "User wants an estimate of how much their current phone is worth for trade-in",
+      "sample_utterance": "How much trade-in value can I get for my iPhone 14 Pro in good condition?"
+    },
+    {
+      "global_index": 103,
+      "intent_id": "EQP_003",
+      "intent_name": "Order Physical SIM Card Replacement",
+      "sub_agent": "Equipment",
+      "description": "User needs a new physical nano-SIM card mailed to them",
+      "sample_utterance": "I need to order a replacement physical SIM card for my backup phone."
+    },
+    {
+      "global_index": 104,
+      "intent_id": "EQP_004",
+      "intent_name": "Generate eSIM QR Code",
+      "sub_agent": "Equipment",
+      "description": "User needs a new eSIM activation QR code or SM-DP+ address for their device",
+      "sample_utterance": "Can you send me a new eSIM QR code so I can download my eSIM profile?"
+    },
+    {
+      "global_index": 105,
+      "intent_id": "EQP_005",
+      "intent_name": "Transfer eSIM to New Phone",
+      "sub_agent": "Equipment",
+      "description": "User bought a new phone and wants to move their active eSIM from their old device",
+      "sample_utterance": "I just got a new phone\u2014how do I transfer my eSIM from my old handset to the new one?"
+    },
+    {
+      "global_index": 106,
+      "intent_id": "EQP_006",
+      "intent_name": "Request Carrier Device Unlock",
+      "sub_agent": "Equipment",
+      "description": "User wants to unlock their carrier-locked phone so it can use other SIMs",
+      "sample_utterance": "My phone is paid off and I need you to carrier-unlock the device IMEI."
+    },
+    {
+      "global_index": 107,
+      "intent_id": "EQP_007",
+      "intent_name": "Track Equipment Order Shipping Status",
+      "sub_agent": "Equipment",
+      "description": "User ordered a new phone or router and wants to check the shipping/delivery tracking",
+      "sample_utterance": "Where is the new phone I ordered three days ago? What is the tracking number?"
+    },
+    {
+      "global_index": 108,
+      "intent_id": "EQP_008",
+      "intent_name": "Return or Exchange New Device",
+      "sub_agent": "Equipment",
+      "description": "User wants to return or exchange a recently purchased phone for a different color/storage model",
+      "sample_utterance": "I bought the 128GB phone on Tuesday, can I exchange it for the 256GB model?"
+    },
+    {
+      "global_index": 109,
+      "intent_id": "EQP_009",
+      "intent_name": "File Warranty Hardware Defect Claim",
+      "sub_agent": "Equipment",
+      "description": "User's phone has a manufacturer hardware defect under warranty (not physical damage)",
+      "sample_utterance": "My 6-month-old phone's camera module stopped focusing and has no physical damage\u2014can I get a warranty replacement?"
+    },
+    {
+      "global_index": 110,
+      "intent_id": "EQP_010",
+      "intent_name": "File Insurance Claim for Cracked Screen or Loss",
+      "sub_agent": "Equipment",
+      "description": "User dropped their phone or lost it and wants to file an equipment protection claim",
+      "sample_utterance": "I dropped my phone and shattered the screen; how do I file an insurance replacement or repair claim?"
+    },
+    {
+      "global_index": 111,
+      "intent_id": "EQP_011",
+      "intent_name": "Order 5G Home Internet Router / Gateway",
+      "sub_agent": "Equipment",
+      "description": "User wants to order or upgrade their 5G Home Internet Wi-Fi gateway equipment",
+      "sample_utterance": "Can I get the newer Wi-Fi 6E router gateway for my home internet?"
+    },
+    {
+      "global_index": 112,
+      "intent_id": "EQP_012",
+      "intent_name": "Return Home Internet Gateway Equipment",
+      "sub_agent": "Equipment",
+      "description": "User needs a prepaid return box/label to send back leased router equipment",
+      "sample_utterance": "Send me a return shipping label so I can mail back the 5G gateway router."
+    },
+    {
+      "global_index": 113,
+      "intent_id": "EQP_013",
+      "intent_name": "Check BYOD IMEI Device Compatibility",
+      "sub_agent": "Equipment",
+      "description": "User wants to check if their unlocked phone's IMEI is compatible with the carrier network",
+      "sample_utterance": "How can I check if my unlocked phone's IMEI will work on your 5G network?"
+    },
+    {
+      "global_index": 114,
+      "intent_id": "EQP_014",
+      "intent_name": "Check Remaining Equipment Installment Balance",
+      "sub_agent": "Equipment",
+      "description": "User wants to know the payoff amount remaining on their device financing agreement",
+      "sample_utterance": "How much do I have left to pay off on my phone equipment installment plan?"
+    },
+    {
+      "global_index": 115,
+      "intent_id": "EQP_015",
+      "intent_name": "Early Upgrade Program Eligibility Check",
+      "sub_agent": "Equipment",
+      "description": "User wants to know if they have paid off 50% of their device to qualify for an early trade-in upgrade",
+      "sample_utterance": "Am I eligible for an early phone upgrade yet if I return my current handset?"
+    },
+    {
+      "global_index": 116,
+      "intent_id": "EQP_016",
+      "intent_name": "Request SIM PUK Unlock Code",
+      "sub_agent": "Equipment",
+      "description": "User entered the wrong SIM PIN too many times and needs the 8-digit PUK code for their SIM card",
+      "sample_utterance": "My phone screen says 'SIM Locked - Enter PUK code'; what is my SIM PUK code?"
+    },
+    {
+      "global_index": 117,
+      "intent_id": "EQP_017",
+      "intent_name": "Check Device Stock & Store Availability",
+      "sub_agent": "Equipment",
+      "description": "User wants to know if a specific phone model is in stock for in-store pickup",
+      "sample_utterance": "Do you have the 512GB Titanium model in stock for same-day store pickup?"
+    },
+    {
+      "global_index": 118,
+      "intent_id": "EQP_018",
+      "intent_name": "Battery Health Warranty Replacement",
+      "sub_agent": "Equipment",
+      "description": "User asks if a degraded phone battery is covered under their extended equipment warranty",
+      "sample_utterance": "My phone battery health dropped below 75%\u2014does my extended equipment coverage include battery replacement?"
+    },
+    {
+      "global_index": 119,
+      "intent_id": "EQP_019",
+      "intent_name": "Replace Defective SIM Card",
+      "sub_agent": "Equipment",
+      "description": "User's physical SIM card shows 'No SIM' or hardware read errors and needs replacement",
+      "sample_utterance": "My phone keeps saying 'SIM card not detected'\u2014I think the gold contacts on my SIM are worn out."
+    },
+    {
+      "global_index": 120,
+      "intent_id": "EQP_020",
+      "intent_name": "Request Trade-In Return Shipping Kit",
+      "sub_agent": "Equipment",
+      "description": "User never received the padded envelope and shipping label to mail in their trade-in phone",
+      "sample_utterance": "I upgraded my phone last week but still haven't received the trade-in shipping kit for my old device."
+    },
+    {
+      "global_index": 121,
+      "intent_id": "USG_001",
+      "intent_name": "Check Current Cycle Mobile Data Usage",
+      "sub_agent": "Usage",
+      "description": "User wants to know how many gigabytes of cellular data they have used this billing cycle",
+      "sample_utterance": "How much mobile data have I used so far this month?"
+    },
+    {
+      "global_index": 122,
+      "intent_id": "USG_002",
+      "intent_name": "Check Remaining Hotspot Data Quota",
+      "sub_agent": "Usage",
+      "description": "User wants to know how much high-speed mobile hotspot data they have left this cycle",
+      "sample_utterance": "How many gigabytes of high-speed hotspot tethering data do I have left?"
+    },
+    {
+      "global_index": 123,
+      "intent_id": "USG_003",
+      "intent_name": "Check International Roaming Data Usage",
+      "sub_agent": "Usage",
+      "description": "User is traveling and wants to see how much international roaming data they have consumed",
+      "sample_utterance": "How much roaming data have I used on my international travel pass today?"
+    },
+    {
+      "global_index": 124,
+      "intent_id": "USG_004",
+      "intent_name": "View Unbilled Call Minutes History",
+      "sub_agent": "Usage",
+      "description": "User wants to check their current cycle voice call minutes and call log usage",
+      "sample_utterance": "How many voice minutes have I used in my current billing period?"
+    },
+    {
+      "global_index": 125,
+      "intent_id": "USG_005",
+      "intent_name": "View SMS and MMS Usage Count",
+      "sub_agent": "Usage",
+      "description": "User wants to check the number of text and picture messages sent this cycle",
+      "sample_utterance": "Can I see how many SMS and MMS messages my line has sent this month?"
+    },
+    {
+      "global_index": 126,
+      "intent_id": "USG_006",
+      "intent_name": "Investigate Sudden Data Usage Spike",
+      "sub_agent": "Usage",
+      "description": "User wants to know why their data usage jumped unexpectedly over a few days",
+      "sample_utterance": "Why does my usage tracker say I used 18GB of cellular data yesterday alone?"
+    },
+    {
+      "global_index": 127,
+      "intent_id": "USG_007",
+      "intent_name": "Family Per-Line Data Usage Breakdown",
+      "sub_agent": "Usage",
+      "description": "User wants to see which family member line is consuming the most shared data",
+      "sample_utterance": "Which line on my family account has used the most mobile data this month?"
+    },
+    {
+      "global_index": 128,
+      "intent_id": "USG_008",
+      "intent_name": "Check Data Deprioritization / Throttling Threshold",
+      "sub_agent": "Usage",
+      "description": "User asks how close they are to the 50GB/100GB premium data threshold before speeds slow down",
+      "sample_utterance": "Have I crossed the 50GB premium data usage threshold for this month yet?"
+    },
+    {
+      "global_index": 129,
+      "intent_id": "USG_009",
+      "intent_name": "Configure Data Usage Alert Notifications",
+      "sub_agent": "Usage",
+      "description": "User wants to set up SMS/email alerts when data usage reaches 75% and 90%",
+      "sample_utterance": "Set up a usage alert text message when my line hits 80% of its monthly data limit."
+    },
+    {
+      "global_index": 130,
+      "intent_id": "USG_010",
+      "intent_name": "Set Child Line Data Usage Cap",
+      "sub_agent": "Usage",
+      "description": "User wants to put a hard monthly gigabyte cap on a child's line so they don't incur overages",
+      "sample_utterance": "Can I cap my son's line at 10GB of data usage per month?"
+    },
+    {
+      "global_index": 131,
+      "intent_id": "USG_011",
+      "intent_name": "Zero-Rated Streaming Usage Verification",
+      "sub_agent": "Usage",
+      "description": "User asks if video/music streaming counted against their high-speed data usage bucket",
+      "sample_utterance": "Did watching video on the mobile app count toward my monthly high-speed data usage?"
+    },
+    {
+      "global_index": 132,
+      "intent_id": "USG_012",
+      "intent_name": "Check Background App Cellular Usage",
+      "sub_agent": "Usage",
+      "description": "User wants help understanding high nighttime/background cellular data transfers on their line",
+      "sample_utterance": "My usage log shows 2GB used every night at 3 AM\u2014what is causing that data usage?"
+    },
+    {
+      "global_index": 133,
+      "intent_id": "USG_013",
+      "intent_name": "Check Rollover Data Balance",
+      "sub_agent": "Usage",
+      "description": "User wants to see how much rollover data they have available and when it expires",
+      "sample_utterance": "How much rollover data is left in my usage bucket from last month?"
+    },
+    {
+      "global_index": 134,
+      "intent_id": "USG_014",
+      "intent_name": "Verify Wi-Fi vs Cellular Data Usage",
+      "sub_agent": "Usage",
+      "description": "User believes they were on home Wi-Fi and wants to check when cellular data was actually used",
+      "sample_utterance": "I was home on Wi-Fi all weekend, why does my usage meter show 6GB of cellular data used on Sunday?"
+    },
+    {
+      "global_index": 135,
+      "intent_id": "USG_015",
+      "intent_name": "Check Roaming Day Pass 24-Hour Timer",
+      "sub_agent": "Usage",
+      "description": "User wants to check when their current 24-hour roaming usage session resets",
+      "sample_utterance": "How many hours and megabytes are left in my current 24-hour international roaming session?"
+    },
+    {
+      "global_index": 136,
+      "intent_id": "USG_016",
+      "intent_name": "Check Remaining International Calling Minutes",
+      "sub_agent": "Usage",
+      "description": "User has an IDD calling pack and wants to check how many international minutes remain",
+      "sample_utterance": "How many minutes do I have left on my 500-minute international calling pack this month?"
+    },
+    {
+      "global_index": 137,
+      "intent_id": "USG_017",
+      "intent_name": "Check Data Usage Cycle Reset Date",
+      "sub_agent": "Usage",
+      "description": "User asks what exact day and time their monthly data usage counter resets to zero",
+      "sample_utterance": "On what day of the month does my high-speed data usage counter reset to zero?"
+    },
+    {
+      "global_index": 138,
+      "intent_id": "USG_018",
+      "intent_name": "Compare 6-Month Historical Data Usage",
+      "sub_agent": "Usage",
+      "description": "User wants to see their average monthly gigabyte usage over the past 6 months",
+      "sample_utterance": "What has my average monthly data usage been over the last six months?"
+    },
+    {
+      "global_index": 139,
+      "intent_id": "USG_019",
+      "intent_name": "Check Overage Data Usage Units",
+      "sub_agent": "Usage",
+      "description": "User on a tiered plan wants to check if they have gone into overage gigabytes",
+      "sample_utterance": "Have I gone over my 15GB plan allowance and triggered overage data usage?"
+    },
+    {
+      "global_index": 140,
+      "intent_id": "USG_020",
+      "intent_name": "Check Prepaid Data Balance & Expiry",
+      "sub_agent": "Usage",
+      "description": "User on a prepaid pack wants to check remaining data balance and expiration date",
+      "sample_utterance": "How much data is left on my prepaid pack and what date does it expire?"
+    },
+    {
+      "global_index": 141,
+      "intent_id": "TEC_001",
+      "intent_name": "No Signal / SOS Only Mode",
+      "sub_agent": "Technical Support",
+      "description": "User's phone displays 'No Service' or 'SOS Only' and cannot connect to the cellular network",
+      "sample_utterance": "My phone has been stuck on 'SOS Only' with zero signal bars for the last two hours."
+    },
+    {
+      "global_index": 142,
+      "intent_id": "TEC_002",
+      "intent_name": "Slow 5G / LTE Mobile Data Speeds",
+      "sub_agent": "Technical Support",
+      "description": "User has signal bars but mobile data pages won't load or speeds are extremely slow",
+      "sample_utterance": "I have full 5G bars but websites barely load and my speed test is under 1 Mbps."
+    },
+    {
+      "global_index": 143,
+      "intent_id": "TEC_003",
+      "intent_name": "Frequent Dropped Voice Calls",
+      "sub_agent": "Technical Support",
+      "description": "User's phone calls keep disconnecting mid-conversation",
+      "sample_utterance": "Every phone call I make drops after about two minutes."
+    },
+    {
+      "global_index": 144,
+      "intent_id": "TEC_004",
+      "intent_name": "Cannot Send or Receive SMS / MMS",
+      "sub_agent": "Technical Support",
+      "description": "User is unable to send or receive standard text messages or picture messages",
+      "sample_utterance": "My text messages keep failing with 'Not Delivered' and I can't send picture MMS."
+    },
+    {
+      "global_index": 145,
+      "intent_id": "TEC_005",
+      "intent_name": "Visual Voicemail Not Syncing",
+      "sub_agent": "Technical Support",
+      "description": "User's Visual Voicemail inbox is not updating or playing audio messages",
+      "sample_utterance": "My Visual Voicemail won't load new voicemails and says 'Cannot connect to voicemail server'."
+    },
+    {
+      "global_index": 146,
+      "intent_id": "TEC_006",
+      "intent_name": "Wi-Fi Calling Activation Error",
+      "sub_agent": "Technical Support",
+      "description": "User gets an error when trying to enable Wi-Fi Calling or update their E911 address",
+      "sample_utterance": "When I try to turn on Wi-Fi Calling on my phone, it gives a technical error."
+    },
+    {
+      "global_index": 147,
+      "intent_id": "TEC_007",
+      "intent_name": "APN Settings Configuration Help",
+      "sub_agent": "Technical Support",
+      "description": "User brought their own device and needs the correct Access Point Name (APN) settings for data/MMS",
+      "sample_utterance": "What are the correct APN settings to get mobile data and MMS working on my unlocked Android phone?"
+    },
+    {
+      "global_index": 148,
+      "intent_id": "TEC_008",
+      "intent_name": "5G Home Internet Router Blinking Red",
+      "sub_agent": "Technical Support",
+      "description": "User's 5G home broadband gateway has a red status light and no internet connection",
+      "sample_utterance": "My 5G home internet gateway light is blinking red and none of my devices can get online."
+    },
+    {
+      "global_index": 149,
+      "intent_id": "TEC_009",
+      "intent_name": "Check Local Cell Tower Outage",
+      "sub_agent": "Technical Support",
+      "description": "User wants to know if there is an active network outage or tower maintenance in their zip code",
+      "sample_utterance": "Is there a cell tower outage in my neighborhood right now? Neither my phone nor my wife's has service."
+    },
+    {
+      "global_index": 150,
+      "intent_id": "TEC_010",
+      "intent_name": "High Ping / Packet Loss on Cellular",
+      "sub_agent": "Technical Support",
+      "description": "User experiences severe latency spikes and packet loss on mobile data or 5G home internet",
+      "sample_utterance": "My 5G connection has huge ping spikes over 400ms and constant packet loss."
+    },
+    {
+      "global_index": 151,
+      "intent_id": "TEC_011",
+      "intent_name": "eSIM Activation Stuck on Activating",
+      "sub_agent": "Technical Support",
+      "description": "User scanned an eSIM QR code but the phone is stuck on 'Activating...' with no service",
+      "sample_utterance": "I scanned the eSIM code an hour ago and my phone is still stuck saying 'Activating eSIM...'."
+    },
+    {
+      "global_index": 152,
+      "intent_id": "TEC_012",
+      "intent_name": "International Roaming Network Not Connecting",
+      "sub_agent": "Technical Support",
+      "description": "User landed in another country and their phone won't register on any local partner network",
+      "sample_utterance": "I just landed in London and my phone refuses to connect to any local roaming network."
+    },
+    {
+      "global_index": 153,
+      "intent_id": "TEC_013",
+      "intent_name": "Outbound Caller ID Showing Wrong Name",
+      "sub_agent": "Technical Support",
+      "description": "User's outgoing calls display an incorrect Caller ID name (CNAM) on recipient phones",
+      "sample_utterance": "When I call people, my Caller ID shows a stranger's name instead of mine\u2014how do we fix that?"
+    },
+    {
+      "global_index": 154,
+      "intent_id": "TEC_014",
+      "intent_name": "Incoming Calls Going Straight to Voicemail",
+      "sub_agent": "Technical Support",
+      "description": "Callers report that the user's phone never rings and goes straight to voicemail",
+      "sample_utterance": "Everyone who calls me says it goes straight to voicemail without my phone ever ringing."
+    },
+    {
+      "global_index": 155,
+      "intent_id": "TEC_015",
+      "intent_name": "Number Port-In Activation Incomplete",
+      "sub_agent": "Technical Support",
+      "description": "User ported their number from another carrier and can make calls, but incoming calls/texts fail",
+      "sample_utterance": "I ported my number over yesterday; I can make outgoing calls, but incoming calls still don't work."
+    },
+    {
+      "global_index": 156,
+      "intent_id": "TEC_016",
+      "intent_name": "VoLTE / HD Voice Call Quality Issue",
+      "sub_agent": "Technical Support",
+      "description": "User hears robotic/garbled audio or echo during voice calls",
+      "sample_utterance": "People say my voice sounds robotic and choppy whenever I'm on a cellular voice call."
+    },
+    {
+      "global_index": 157,
+      "intent_id": "TEC_017",
+      "intent_name": "Three-Way / Conference Call Failure",
+      "sub_agent": "Technical Support",
+      "description": "User is unable to merge calls into a 3-way conference call",
+      "sample_utterance": "Every time I tap 'Merge Calls' for a 3-way call, it disconnects both callers."
+    },
+    {
+      "global_index": 158,
+      "intent_id": "TEC_018",
+      "intent_name": "Short-Code 2FA Texts Not Arriving",
+      "sub_agent": "Technical Support",
+      "description": "User receives normal texts from friends, but bank/app verification short-code SMS never arrive",
+      "sample_utterance": "I'm not receiving any 6-digit verification codes from my bank or apps via SMS short codes."
+    },
+    {
+      "global_index": 159,
+      "intent_id": "TEC_019",
+      "intent_name": "Personal Hotspot Not Connecting Devices",
+      "sub_agent": "Technical Support",
+      "description": "User's phone hotspot turns on, but laptops connect with 'No Internet Access'",
+      "sample_utterance": "My laptop connects to my phone's Wi-Fi hotspot, but says 'Connected, no internet'."
+    },
+    {
+      "global_index": 160,
+      "intent_id": "TEC_020",
+      "intent_name": "Poor Indoor Signal / Dead Zone Troubleshooting",
+      "sub_agent": "Technical Support",
+      "description": "User gets outdoor signal but loses all connectivity inside their home or office building",
+      "sample_utterance": "My signal works fine on the street, but drops to zero bars the moment I walk inside my house."
+    }
+  ]
+}

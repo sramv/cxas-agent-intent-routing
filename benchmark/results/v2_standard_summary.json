@@ -1,0 +1,190 @@
+{
+  "version": "v2",
+  "app_display_name": "telco-agent-v2-fast-router",
+  "app_name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>",
+  "model": "baseline-llm",
+  "difficulty_filter": "standard",
+  "total_cases": 160,
+  "valid_cases": 160,
+  "correct_cases": 156,
+  "error_cases": 0,
+  "routing_accuracy_pct": 97.5,
+  "fine_grained_160_intent_accuracy_pct": 83.02,
+  "diffusion_gemma_gpu_inference_latency_ms": {
+    "mean": 406.38,
+    "p50": 404.15,
+    "p90": 491.66,
+    "p95": 511.48,
+    "p99": 564.9,
+    "min": 308.63,
+    "max": 580.06
+  },
+  "cloud_run_tool_span_latency_ms": {
+    "mean": 654.93,
+    "p50": 651.88,
+    "p90": 740.05,
+    "p95": 762.97,
+    "p99": 833.26,
+    "min": 534.7,
+    "max": 1021.7
+  },
+  "orchestrator_routing_latency_ms": {
+    "mean": 1436.39,
+    "p50": 1364.03,
+    "p90": 1730.66,
+    "p95": 1875.16,
+    "p99": 2633.96,
+    "min": 1028.02,
+    "max": 2986.8
+  },
+  "orchestrator_prefill_latency_ms": {
+    "mean": 241.16,
+    "p50": 207.0,
+    "p90": 335.4,
+    "p95": 385.2,
+    "p99": 937.21,
+    "min": 123.0,
+    "max": 1705.0
+  },
+  "perceived_e2e_latency_ms": {
+    "mean": 2994.68,
+    "p50": 2933.0,
+    "p90": 3394.2,
+    "p95": 3628.8,
+    "p99": 4118.39,
+    "min": 2201.0,
+    "max": 4397.0
+  },
+  "client_e2e_latency_ms": {
+    "mean": 4027.18,
+    "p50": 4025.39,
+    "p90": 4524.34,
+    "p95": 4805.98,
+    "p99": 5164.15,
+    "min": 2884.25,
+    "max": 5459.61
+  },
+  "token_and_cost_metrics": {
+    "avg_orchestrator_input_tokens": 5034.5,
+    "avg_orchestrator_output_tokens": 72.3,
+    "avg_sub_agent_input_tokens": 1626.2,
+    "avg_sub_agent_output_tokens": 15.5,
+    "avg_total_input_tokens": 6660.7,
+    "avg_total_output_tokens": 87.8,
+    "orchestrator_routing_cost_per_1k_turns_usd": 0.7985,
+    "total_turn_cost_per_1k_turns_usd": 1.0518
+  },
+  "per_sub_agent": {
+    "Accounts": {
+      "total": 20,
+      "correct": 20,
+      "accuracy_pct": 100.0,
+      "intent_160_accuracy_pct": 100.0,
+      "diffusion_gemma_gpu_p50_ms": 395.82,
+      "tool_span_p50_ms": 626.23,
+      "orchestrator_p50_ms": 1308.54,
+      "perceived_e2e_p50_ms": 2734.5
+    },
+    "Billing": {
+      "total": 20,
+      "correct": 20,
+      "accuracy_pct": 100.0,
+      "intent_160_accuracy_pct": 100.0,
+      "diffusion_gemma_gpu_p50_ms": 406.31,
+      "tool_span_p50_ms": 643.25,
+      "orchestrator_p50_ms": 1391.23,
+      "perceived_e2e_p50_ms": 2970.0
+    },
+    "Technical Support": {
+      "total": 20,
+      "correct": 18,
+      "accuracy_pct": 90.0,
+      "intent_160_accuracy_pct": 50.0,
+      "diffusion_gemma_gpu_p50_ms": 447.6,
+      "tool_span_p50_ms": 700.31,
+      "orchestrator_p50_ms": 1421.43,
+      "perceived_e2e_p50_ms": 3061.0
+    },
+    "Usage": {
+      "total": 20,
+      "correct": 19,
+      "accuracy_pct": 95.0,
+      "intent_160_accuracy_pct": 30.0,
+      "diffusion_gemma_gpu_p50_ms": 410.14,
+      "tool_span_p50_ms": 672.39,
+      "orchestrator_p50_ms": 1445.9,
+      "perceived_e2e_p50_ms": 3046.0
+    },
+    "Plans": {
+      "total": 20,
+      "correct": 19,
+      "accuracy_pct": 95.0,
+      "intent_160_accuracy_pct": 95.0,
+      "diffusion_gemma_gpu_p50_ms": 366.45,
+      "tool_span_p50_ms": 626.51,
+      "orchestrator_p50_ms": 1285.71,
+      "perceived_e2e_p50_ms": 2897.0
+    },
+    "Disconnect": {
+      "total": 20,
+      "correct": 20,
+      "accuracy_pct": 100.0,
+      "intent_160_accuracy_pct": 100.0,
+      "diffusion_gemma_gpu_p50_ms": 404.98,
+      "tool_span_p50_ms": 651.41,
+      "orchestrator_p50_ms": 1316.5,
+      "perceived_e2e_p50_ms": 2882.5
+    },
+    "Equipment": {
+      "total": 20,
+      "correct": 20,
+      "accuracy_pct": 100.0,
+      "intent_160_accuracy_pct": 85.0,
+      "diffusion_gemma_gpu_p50_ms": 405.81,
+      "tool_span_p50_ms": 656.19,
+      "orchestrator_p50_ms": 1420.91,
+      "perceived_e2e_p50_ms": 3002.0
+    },
+    "Payments": {
+      "total": 20,
+      "correct": 20,
+      "accuracy_pct": 100.0,
+      "intent_160_accuracy_pct": 100.0,
+      "diffusion_gemma_gpu_p50_ms": 362.71,
+      "tool_span_p50_ms": 616.25,
+      "orchestrator_p50_ms": 1377.01,
+      "perceived_e2e_p50_ms": 2889.0
+    }
+  },
+  "confusion_matrix": {
+    "Accounts": {
+      "Accounts": 20
+    },
+    "Billing": {
+      "Billing": 20
+    },
+    "Disconnect": {
+      "Disconnect": 20
+    },
+    "Equipment": {
+      "Equipment": 20
+    },
+    "Payments": {
+      "Payments": 20
+    },
+    "Plans": {
+      "Plans": 19,
+      "NONE": 1
+    },
+    "Technical Support": {
+      "Technical Support": 18,
+      "Equipment": 1,
+      "Disconnect": 1
+    },
+    "Usage": {
+      "Usage": 19,
+      "Plans": 1
+    }
+  },
+  "wall_time_seconds": 505.46
+}
