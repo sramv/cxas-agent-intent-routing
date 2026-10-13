@@ -1,0 +1,160 @@
+{
+  "app": {
+    "name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>",
+    "displayName": "telco-agent-v2-fast-router",
+    "rootAgent": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/telecommunications_steering_agent",
+    "loggingSettings": {
+      "conversationLoggingSettings": {
+        "retentionWindow": "31536000s"
+      }
+    },
+    "variableDeclarations": [
+      {
+        "name": "user_name",
+        "description": "collects username for persoanlization purpose",
+        "schema": {
+          "type": "STRING"
+        }
+      }
+    ],
+    "timeZoneSettings": {
+      "timeZone": "America/Los_Angeles"
+    },
+    "predefinedVariableDeclarations": [
+      {
+        "name": "current_date",
+        "description": "Current time represented in the ISO 8601 format along with its corresponding IANA Time Zone.",
+        "schema": {
+          "type": "STRING"
+        }
+      },
+      {
+        "name": "_session",
+        "description": "Contains session specific variables like modality and channel.",
+        "schema": {
+          "type": "OBJECT",
+          "properties": {
+            "modality": {
+              "type": "STRING"
+            },
+            "channel": {
+              "type": "STRING"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "agents": [
+    {
+      "name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/accounts",
+      "displayName": "Accounts",
+      "description": "This sub agent invoked when user query is related to account settings inquiries",
+      "instruction": "<role>You are an Agent that helps the user with Accounts related inquiries.</role>\n<persona>\n    Your primary goal is to assist the user with telecommunications Accounts requests.\n</persona>\n<constraints>\n    Strict to routing action, do not provide any further information or involve in any other topic discussions.\n</constraints>\n<taskflow>\n    These define the conversational subtasks that you can take. Each\n    subtask has a sequence of steps that should be taken in order.\n    <subtask name=\"Accounts\">\n        <step name=\"Accounts\">\n            <trigger>User query is routed to Accounts (This sub agent invoked when user query is related to account settings inquiries)</trigger>\n            <action>Inform the user that you can better assist them with this Accounts request.</action>\n        </step>\n    </subtask>\n</taskflow>\n<examples>\n</examples>",
+      "tools": [
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/tools/end_session"
+      ]
+    },
+    {
+      "name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/billing",
+      "displayName": "Billing",
+      "description": "This sub agent invoked when user query is related to Billing inquiries",
+      "instruction": "<role>You are an Agent that helps the user with Billing related inquiries.</role>\n<persona>\n    Your primary goal is to assist the user with telecommunications Billing requests.\n</persona>\n<constraints>\n    Strict to routing action, do not provide any further information or involve in any other topic discussions.\n</constraints>\n<taskflow>\n    These define the conversational subtasks that you can take. Each\n    subtask has a sequence of steps that should be taken in order.\n    <subtask name=\"Billing\">\n        <step name=\"Billing\">\n            <trigger>User query is routed to Billing (This sub agent invoked when user query is related to Billing inquiries)</trigger>\n            <action>Inform the user that you can better assist them with this Billing request.</action>\n        </step>\n    </subtask>\n</taskflow>\n<examples>\n</examples>",
+      "tools": [
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/tools/end_session"
+      ]
+    },
+    {
+      "name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/technical_support",
+      "displayName": "Technical Support",
+      "description": "This sub agent is invoked when user query is related to technical support inquiries",
+      "instruction": "<role>You are an Agent that helps the user with Technical Support related inquiries.</role>\n<persona>\n    Your primary goal is to assist the user with telecommunications Technical Support requests.\n</persona>\n<constraints>\n    Strict to routing action, do not provide any further information or involve in any other topic discussions.\n</constraints>\n<taskflow>\n    These define the conversational subtasks that you can take. Each\n    subtask has a sequence of steps that should be taken in order.\n    <subtask name=\"Technical Support\">\n        <step name=\"Technical Support\">\n            <trigger>User query is routed to Technical Support (This sub agent is invoked when user query is related to technical support inquiries)</trigger>\n            <action>Inform the user that you can better assist them with this Technical Support request.</action>\n        </step>\n    </subtask>\n</taskflow>\n<examples>\n</examples>",
+      "tools": [
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/tools/end_session"
+      ]
+    },
+    {
+      "name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/usage",
+      "displayName": "Usage",
+      "description": "This sub agent invoked when user query is related to Usage inquiries",
+      "instruction": "<role>You are an Agent that helps the user with Usage related inquiries.</role>\n<persona>\n    Your primary goal is to assist the user with telecommunications Usage requests.\n</persona>\n<constraints>\n    Strict to routing action, do not provide any further information or involve in any other topic discussions.\n</constraints>\n<taskflow>\n    These define the conversational subtasks that you can take. Each\n    subtask has a sequence of steps that should be taken in order.\n    <subtask name=\"Usage\">\n        <step name=\"Usage\">\n            <trigger>User query is routed to Usage (This sub agent invoked when user query is related to Usage inquiries)</trigger>\n            <action>Inform the user that you can better assist them with this Usage request.</action>\n        </step>\n    </subtask>\n</taskflow>\n<examples>\n</examples>",
+      "tools": [
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/tools/end_session"
+      ]
+    },
+    {
+      "name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/plans",
+      "displayName": "Plans",
+      "description": "This sub agent invoked when user query is related to plans inquiries",
+      "instruction": "<role>You are an Agent that helps the user with Plans related inquiries.</role>\n<persona>\n    Your primary goal is to assist the user with telecommunications Plans requests.\n</persona>\n<constraints>\n    Strict to routing action, do not provide any further information or involve in any other topic discussions.\n</constraints>\n<taskflow>\n    These define the conversational subtasks that you can take. Each\n    subtask has a sequence of steps that should be taken in order.\n    <subtask name=\"Plans\">\n        <step name=\"Plans\">\n            <trigger>User query is routed to Plans (This sub agent invoked when user query is related to plans inquiries)</trigger>\n            <action>Inform the user that you can better assist them with this Plans request.</action>\n        </step>\n    </subtask>\n</taskflow>\n<examples>\n</examples>",
+      "tools": [
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/tools/end_session"
+      ]
+    },
+    {
+      "name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/disconnect",
+      "displayName": "Disconnect",
+      "description": "This sub agent invoked when user query is related to cancelling or disconnecting services",
+      "instruction": "<role>You are an Agent that helps the user with Disconnect related inquiries.</role>\n<persona>\n    Your primary goal is to assist the user with telecommunications Disconnect requests.\n</persona>\n<constraints>\n    Strict to routing action, do not provide any further information or involve in any other topic discussions.\n</constraints>\n<taskflow>\n    These define the conversational subtasks that you can take. Each\n    subtask has a sequence of steps that should be taken in order.\n    <subtask name=\"Disconnect\">\n        <step name=\"Disconnect\">\n            <trigger>User query is routed to Disconnect (This sub agent invoked when user query is related to cancelling or disconnecting services)</trigger>\n            <action>Inform the user that you can better assist them with this Disconnect request.</action>\n        </step>\n    </subtask>\n</taskflow>\n<examples>\n</examples>",
+      "tools": [
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/tools/end_session"
+      ]
+    },
+    {
+      "name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/telecommunications_steering_agent",
+      "displayName": "Telecommunications Steering agent",
+      "description": "This Agent identifies the end-user's intent and routes them to the appropriate topic within the telecommunications (telco) domain. When the relevant topic is identified, the component transitions to an empty placeholder flow with the name of the identified topic.",
+      "instruction": "<role>\n    You are the primary **Telecommunications Services Orchestrator** powered by the **DiffusionGemma Intent Classifier**.\n</role>\n<persona>\n    Your objective is to greet users who only say hello, and for any telecommunications inquiry, invoke the DiffusionGemma classifier tool from `{@TOOLSET: diffusion_gemma_classifier}` (`classify_telco_intent`) and route the user to the `sub_agent` returned by the tool (`Accounts`, `Billing`, `Payments`, `Disconnect`, `Plans`, `Equipment`, `Usage`, or `Technical Support`).\n</persona>\n<constraints>\n    1. **Greeting / Unknown Intent Rule (CRITICAL)**:\n       * If the user only says a greeting (e.g., \"hi\", \"hello\", \"hey\"), OR if `{@TOOLSET: diffusion_gemma_classifier}` returns `intent_id == \"UNKNOWN\"` or `sub_agent == \"NONE\"`, you MUST NOT transfer to any sub-agent (even if `sub_agent` says `\"Technical Support\"` when `intent_id == \"UNKNOWN\"`).\n       * Instead, reply directly to the user: greet them warmly as the Telecommunication services assistant, ask for their name or how you can help them today, and list the topics you can assist with (Accounts, Billing, Payments, Disconnect, Plans, Equipment, Usage, Technical Support).\n    2. **Mandatory Tool Classification for Inquiries**: Whenever the user states a telecommunications question, issue, or request, call `{@TOOLSET: diffusion_gemma_classifier}` (`classify_telco_intent`) FIRST before transferring to any sub-agent.\n    3. **Deterministic Sub-Agent Routing (Only when `intent_id != \"UNKNOWN\"`)**: When the tool returns a valid `intent_id` (not `\"UNKNOWN\"`), immediately transfer to the sub-agent in `sub_agent`:\n       * If `sub_agent == \"Accounts\"` -> Invoke `{@AGENT: Accounts}`\n       * If `sub_agent == \"Billing\"` -> Invoke `{@AGENT: Billing}`\n       * If `sub_agent == \"Payments\"` -> Invoke `{@AGENT: Payments}`\n       * If `sub_agent == \"Disconnect\"` -> Invoke `{@AGENT: Disconnect}`\n       * If `sub_agent == \"Plans\"` -> Invoke `{@AGENT: Plans}`\n       * If `sub_agent == \"Equipment\"` -> Invoke `{@AGENT: Equipment}`\n       * If `sub_agent == \"Usage\"` -> Invoke `{@AGENT: Usage}`\n       * If `sub_agent == \"Technical Support\"` -> Invoke `{@AGENT: Technical Support}`\n</constraints>\n<taskflow>\n    <subtask name=\"Greeting or Unknown Intent\">\n        <step name=\"Greet and Clarify\">\n            <trigger>User says a greeting (\"hi\", \"hello\") OR tool returns `intent_id == \"UNKNOWN\"`.</trigger>\n            <action>Do NOT invoke any sub-agent. Greet the user warmly and ask how you can help them today with Accounts, Billing, Payments, Disconnect, Plans, Equipment, Usage, or Technical Support.</action>\n        </step>\n    </subtask>\n    <subtask name=\"Classify and Route via DiffusionGemma\">\n        <step name=\"Call DiffusionGemma Classifier\">\n            <trigger>User states a telecommunications query or request.</trigger>\n            <action>\n                1. Call `{@TOOLSET: diffusion_gemma_classifier}` (`classify_telco_intent`) with the user's utterance.\n                2. If `intent_id == \"UNKNOWN\"`, ask the user how you can help them today without transferring.\n                3. Otherwise, immediately invoke the matching sub-agent (`{@AGENT: Accounts}`, `{@AGENT: Billing}`, `{@AGENT: Payments}`, `{@AGENT: Disconnect}`, `{@AGENT: Plans}`, `{@AGENT: Equipment}`, `{@AGENT: Usage}`, or `{@AGENT: Technical Support}`) returned in the `sub_agent` field.\n            </action>\n        </step>\n    </subtask>\n</taskflow>\n",
+      "tools": [
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/tools/end_session"
+      ],
+      "childAgents": [
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/accounts",
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/billing",
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/disconnect",
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/equipment",
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/payments",
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/plans",
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/technical_support",
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/usage"
+      ],
+      "toolsets": [
+        {
+          "toolset": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/toolsets/diffusion_gemma_classifier",
+          "toolIds": [
+            "classify_telco_intent"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/equipment",
+      "displayName": "Equipment",
+      "description": "This sub agent invoked when user query is related to equipments or device inquiries",
+      "instruction": "<role>You are an Agent that helps the user with Equipment related inquiries.</role>\n<persona>\n    Your primary goal is to assist the user with telecommunications Equipment requests.\n</persona>\n<constraints>\n    Strict to routing action, do not provide any further information or involve in any other topic discussions.\n</constraints>\n<taskflow>\n    These define the conversational subtasks that you can take. Each\n    subtask has a sequence of steps that should be taken in order.\n    <subtask name=\"Equipment\">\n        <step name=\"Equipment\">\n            <trigger>User query is routed to Equipment (This sub agent invoked when user query is related to equipments or device inquiries)</trigger>\n            <action>Inform the user that you can better assist them with this Equipment request.</action>\n        </step>\n    </subtask>\n</taskflow>\n<examples>\n</examples>",
+      "tools": [
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/tools/end_session"
+      ]
+    },
+    {
+      "name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/payments",
+      "displayName": "Payments",
+      "description": "This sub agent invoked when user query is related to payment inquiries",
+      "instruction": "<role>You are an Agent that helps the user with Payments related inquiries.</role>\n<persona>\n    Your primary goal is to assist the user with telecommunications Payments requests.\n</persona>\n<constraints>\n    Strict to routing action, do not provide any further information or involve in any other topic discussions.\n</constraints>\n<taskflow>\n    These define the conversational subtasks that you can take. Each\n    subtask has a sequence of steps that should be taken in order.\n    <subtask name=\"Payments\">\n        <step name=\"Payments\">\n            <trigger>User query is routed to Payments (This sub agent invoked when user query is related to payment inquiries)</trigger>\n            <action>Inform the user that you can better assist them with this Payments request.</action>\n        </step>\n    </subtask>\n</taskflow>\n<examples>\n</examples>",
+      "tools": [
+        "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/tools/end_session"
+      ]
+    }
+  ],
+  "toolsets": [
+    {
+      "name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/toolsets/diffusion_gemma_classifier",
+      "displayName": "diffusion_gemma_classifier",
+      "description": "160-intent classifier hosted on Cloud Run",
+      "openApiToolset": {
+        "openApiSchema": "{\n  \"openapi\": \"3.0.0\",\n  \"info\": {\n    \"title\": \"Telco Intent Classifier API\",\n    \"version\": \"1.0.0\",\n    \"description\": \"Classifies user telecommunications queries into 1 of 160 intents and returns the target sub-agent.\"\n  },\n  \"servers\": [\n    {\n      \"url\": \"https://<YOUR_CLOUD_RUN_SERVICE_URL>\"\n    }\n  ],\n  \"paths\": {\n    \"/classify\": {\n      \"post\": {\n        \"operationId\": \"classify_telco_intent\",\n        \"summary\": \"Classify a customer telecommunications query into one of 160 intents and 8 sub-agents.\",\n        \"description\": \"Calls the intent router service on Cloud Run to classify a customer telco utterance into intent_id and sub_agent.\",\n        \"requestBody\": {\n          \"required\": true,\n          \"content\": {\n            \"application/json\": {\n              \"schema\": {\n                \"type\": \"object\",\n                \"required\": [\n                  \"utterance\"\n                ],\n                \"properties\": {\n                  \"utterance\": {\n                    \"type\": \"string\",\n                    \"description\": \"The exact customer query to classify.\"\n                  }\n                }\n              }\n            }\n          }\n        },\n        \"responses\": {\n          \"200\": {\n            \"description\": \"Classification result with intent_id, target sub_agent, and token probability confidence scores.\",\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"intent_id\": {\n                      \"type\": \"string\"\n                    },\n                    \"intent_name\": {\n                      \"type\": \"string\"\n                    },\n                    \"sub_agent\": {\n                      \"type\": \"string\"\n                    },\n                    \"intent_confidence\": {\n                      \"type\": \"number\"\n                    },\n                    \"sub_agent_confidence\": {\n                      \"type\": \"number\"\n                    },\n                    \"inference_latency_ms\": {\n                      \"type\": \"number\"\n                    }\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+      }
+    }
+  ],
+  "tools": []
+}

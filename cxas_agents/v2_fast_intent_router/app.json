@@ -1,0 +1,46 @@
+{
+  "name": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>",
+  "displayName": "telco-agent-v2-fast-router",
+  "rootAgent": "projects/<YOUR_GCP_PROJECT_ID>/locations/us/apps/<YOUR_V2_APP_ID>/agents/telecommunications_steering_agent",
+  "loggingSettings": {
+    "conversationLoggingSettings": {
+      "retentionWindow": "31536000s"
+    }
+  },
+  "variableDeclarations": [
+    {
+      "name": "user_name",
+      "description": "collects username for persoanlization purpose",
+      "schema": {
+        "type": "STRING"
+      }
+    }
+  ],
+  "timeZoneSettings": {
+    "timeZone": "America/Los_Angeles"
+  },
+  "predefinedVariableDeclarations": [
+    {
+      "name": "current_date",
+      "description": "Current time represented in the ISO 8601 format along with its corresponding IANA Time Zone.",
+      "schema": {
+        "type": "STRING"
+      }
+    },
+    {
+      "name": "_session",
+      "description": "Contains session specific variables like modality and channel.",
+      "schema": {
+        "type": "OBJECT",
+        "properties": {
+          "modality": {
+            "type": "STRING"
+          },
+          "channel": {
+            "type": "STRING"
+          }
+        }
+      }
+    }
+  ]
+}

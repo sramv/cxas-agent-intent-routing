@@ -21,6 +21,9 @@ This repository benchmarks two intent-routing architectures for a **160-intent T
 │   ├── Dockerfile                        # Non-root container image for Cloud Run deployment
 │   ├── openapi_spec.json                 # OpenAPI 3.0 specification registered as a CXAS Toolset
 │   └── telco_160_intents.json            # Bundled 160-intent taxonomy for prefix-cached system prompt
+├── cxas_agents/
+│   ├── v1_llm_router/                    # Complete CXAS App V1 agent definitions & instructions (9 agents)
+│   └── v2_fast_intent_router/            # Complete CXAS App V2 agent definitions, OpenAPI toolset & instructions
 ├── cxas_config/
 │   ├── export_and_clone.py               # Exports V1 scaffolding and clones V2 CXAS app via CES v1beta API
 │   ├── update_v1.py                      # Snapshots and updates V1 with the 160-intent instructions.txt
